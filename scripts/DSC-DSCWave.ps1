@@ -17,3 +17,4 @@ configuration DSCWave {
         TestScript = { Test-Path -Path "$env:windir\temp\DSC Resource Kit Wave 6 08212014.zip"; }
     }
 }
+. .\WebServerConfig.ps1
