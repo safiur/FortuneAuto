@@ -1,8 +1,8 @@
 #http://geekswithblogs.net/Wchrabaszcz/archive/2013/09/04/how-to-install-windows-server-features-using-powershell--server.aspx
 Configuration WebServerConfig
 {
-    Import-DscResource -ModuleName PSDesiredStateConfiguration
-	Import-DscResource -ModuleName webAdministration
+	
+    Import-DscResource -ModuleName webAdministration
 
 	Node ("localhost")
 	{
