@@ -1,6 +1,6 @@
 Configuration DSCWave {
 Archive DSCWave {
-	DependsOn = '[Script]WebServerConfig';
+	DependsOn = '[Script]DSCwave';
 	Ensure = 'Present';
 	Path = "$env:windir\temp\DSC Resource Kit Wave 10 04012015.zip";
 	Destination = "$env:ProgramFiles\WindowsPowerShell\Modules";
