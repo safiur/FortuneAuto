@@ -17,4 +17,3 @@ Archive DSCWave {
 	TestScript = { Test-Path -Path "$env:windir\temp\DSC Resource Kit Wave 10 04012015.zip"; } 
  }
 }
-. ./WebServerConfig.ps1
