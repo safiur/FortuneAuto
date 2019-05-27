@@ -10,7 +10,7 @@ $clnt.DownloadFile($url,$file)
 
 $shell_app=new-object -com shell.application 
 $zip_file = $shell_app.namespace($file) 
-$destination = $shell_app.namespace("C:\Program Files\WindowsPowerShell\Modules") 
-Remove-Item "C:\Program Files\WindowsPowerShell\Modules*.*"  -recurse -force -ea silentlycontinue
+$destination = $shell_app.namespace("$path") 
+Remove-Item "$path*.*"  -recurse -force -ea silentlycontinue
 $destination.Copyhere($zip_file.items())
 
